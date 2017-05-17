@@ -26,12 +26,11 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTabHost mTabHost;
     private ViewPager mViewPager;
     private List<Fragment> mFragmentList;
-    private Class mClass[] = {HomeFragment.class,ReportFragment.class,MessageFragment.class,MineFragment.class};
-    private Fragment mFragment[] = {new HomeFragment(),new ReportFragment(),new MessageFragment(),new MineFragment()};
-    private String mTitles[] = {"首页","报表","消息","我的"};
+    private Class mClass[] = {HomeFragment.class,MessageFragment.class,MineFragment.class};
+    private Fragment mFragment[] = {new HomeFragment(),new MessageFragment(),new MineFragment()};
+    private String mTitles[] = {"立即参与","状态","历史记录"};
     private int mImages[] = {
             R.drawable.tab_home,
-            R.drawable.tab_report,
             R.drawable.tab_message,
             R.drawable.tab_mine
     };
